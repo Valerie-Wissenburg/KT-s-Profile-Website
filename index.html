@@ -13,7 +13,43 @@
   
   <body>
 
-
+<!-----------
+ 	NAV
+------------->
+<header>
+ <div class="contain-to-grid sticky">
+      <nav class="top-bar" data-topbar data-options="sticky_on: small, medium, large">
+        <div class="top-bar-section row">
+          <!-- Right Nav Section -->
+          <ul>
+            <li><a href="#music" class="smoothScroll">Music</a>
+            </li>
+            <li><a href="#media" class="smoothScroll">Media</a>
+            </li>
+            <li><a href="#events" class="smoothScroll">Events</a>
+            </li>
+            <li class="name">
+            <h1><a id="KT-top-bar" href="#home">Ya Boi KT</a></h1>
+          </li>
+            <li><a href="#merch" class="smoothScroll">Merch</a>
+            </li>
+            <li><a href="#bio" class="smoothScroll">Bio</a>
+            </li>
+            <li><a href="#connect" class="smoothScroll">Connect</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</header>
+  <!-- ============= 
+	HERO
+==================-->
+<section id="home">
+	<div class="hero">
+    <img src="http://placehold.it/1500x700">
+    </div>
+</section>
 
 <div id="wrapper">
 
@@ -110,5 +146,17 @@
 
 
 </div>
+  <!-- ============= 
+	SCRIPTS
+==================-->
+	<script src="js/vendor/modernizr.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script type="text/javascript" src="javascript/smoothscroll.js"></script>
   </body>
 </html>
