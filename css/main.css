@@ -2,8 +2,12 @@
 /* CSS Document */
 
 
+#wrapper {
+	width:100%;
+}
+
 .row {
-	max-width:1000px;
+	mad-width:1000px;
 }
 
 
