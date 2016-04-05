@@ -1,3 +1,21 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+/*NAV*/
+nav {
+	width: 100%;
+	}
+li {
+	display:inline-block;
+	padding: 10px 45px;
+	}
+.top-bar {
+	background-color: #DDDCDD;
+}
+.contain-to-grid {
+	background-color: #DDDCDD;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: #DDDCDD;
+}
