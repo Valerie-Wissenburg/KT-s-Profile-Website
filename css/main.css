@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-<<<<<<< HEAD
+
 .row {
 	max-width:1000px;
 }
@@ -59,10 +59,7 @@ li {
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background-color: #DDDCDD;
 }
-<<<<<<< HEAD
 a {
 	color: #2B2B2B;
 	}
-=======
->>>>>>> origin/master
->>>>>>> origin/master
+
