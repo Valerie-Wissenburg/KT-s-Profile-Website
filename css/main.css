@@ -1,3 +1,44 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.row {
+	max-width:1000px;
+}
+
+
+
+/*-- MERCH COLLAGE ============ --*/
+
+.header-alignment {
+	display: block;
+	margin:4rem auto 2rem auto;
+}
+.img-spacing {
+	padding: 0 1em;
+}
+#promo-margin {
+	margin-top: 12px;
+}
+#about-test-margin {
+	margin-right: 10px;
+}
+#work .row .row {
+	padding-bottom: 1.875rem;
+}
+#left-picture-spacing {
+	margin-right: 0;
+}
+.margin-about-pictures {
+	margin-bottom:10rem;
+}
+#wrapper .text {
+	position: relative;
+	bottom: 0px;
+	left: 50px;
+	visibility: hidden;
+}
+#wrapper:hover .text {
+	visibility: visible;
+}  
+
+/*-- END OF MERCH COLLAGE ============ --*/
