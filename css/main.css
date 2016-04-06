@@ -60,13 +60,19 @@ li {
 	padding: 10px 45px;
 	}
 .top-bar {
-	background-color: #DDDCDD;
+	background-color: none;
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
-	background-color: #DDDCDD;
+	background-color: none;
 }
 a {
 	color: #2B2B2B;
+	}
+.fixed {
+	position:fixed;
+	}
+.sticky {
+	width:100%;
 	}
 /*----------
 	HERO

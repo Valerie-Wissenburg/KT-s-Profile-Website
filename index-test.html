@@ -8,38 +8,37 @@
     <title>Ya Boi KT</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
 </head>
 
 <body>
 <header>
- <div class="contain-to-grid sticky">
+    <div class="contain-to-grid sticky fixed">
       <nav class="top-bar" data-topbar data-options="sticky_on: small, medium, large">
-        <div class="top-bar-section row">
-          <!-- Right Nav Section -->
-          <ul>
-            <li><a href="#music" class="smoothScroll">Music</a>
-            </li>
-            <li><a href="#media" class="smoothScroll">Media</a>
-            </li>
-            <li><a href="#events" class="smoothScroll">Events</a>
-            </li>
-            <li class="name">
-            <h1><a id="KT-top-bar" href="#home">Ya Boi KT</a></h1>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a id="Jason-top-bar" href="#home">Jason Pearson</a></h1>
           </li>
-            <li><a href="#merch" class="smoothScroll">Merch</a>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+          </li>
+        </ul>
+        <div class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li><a href="#home" class="smoothScroll">home</a>
             </li>
-            <li><a href="#bio" class="smoothScroll">Bio</a>
+            <li><a href="#about" class="smoothScroll">about</a>
             </li>
-            <li><a href="#connect" class="smoothScroll">Connect</a>
+            <li><a href="#testimonials" class="smoothScroll">testimonials</a>
+            </li>
+            <li><a href="#contact" class="smoothScroll">contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-</header>
+  </header>
   <!-- ============= 
 	HERO
 ==================-->
@@ -128,5 +127,13 @@
         </div>
     </div>
 </section>
+ <script src="js/vendor/modernizr.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+  <script src="js/smoothscroll.js"></script>
+   <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>
