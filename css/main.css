@@ -123,6 +123,16 @@ a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin: 0; }
+/*----------------
+	FOOTER
+------------------*/
+footer {
+	background-color: #4D4D4D;
+	padding: 1rem 0rem;
+	}
+.icon {
+	width: 40px;
+	}
 	
 /*----------------
 	VIDEO PAGE
