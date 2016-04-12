@@ -191,7 +191,9 @@ nav label:before{
 #wrapper:hover .text {
 	visibility: visible;
 }  
-
+.no-float {
+	float:left !important;
+	}
 /*-- END OF MERCH COLLAGE ============ --*/
 
 
