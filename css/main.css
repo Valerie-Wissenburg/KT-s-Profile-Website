@@ -10,6 +10,9 @@
 	mad-width:1000px;
 }
 
+section {
+	padding-top: 10rem;
+	}
 
 /*----------
 	NAV
@@ -268,12 +271,15 @@ a {
     text-align: center; }
   .event-date .event-day {
     margin: 0;
-    border: 1px solid #eee;
+    background: #eee;
     padding: 0 2rem;
     text-align: center;
     font-size: 2rem; }
 
 .event-desc {
+	height: 92px;
+	width: 278px;
+	background: white;
   padding: 0 0 0 1rem;
   text-align: left;
   display: table-cell;
@@ -290,6 +296,12 @@ a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin: 0; }
+.events-padding {
+	padding: 9rem 0;
+	}
+.events-title {
+	padding: 9rem 0;
+	}
 /*----------------
 	FOOTER
 ------------------*/
