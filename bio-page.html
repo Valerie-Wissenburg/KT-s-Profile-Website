@@ -99,8 +99,6 @@
     <p>Jenny Slater & Valerie Wissenburg</p>
   </div>
 </footer>
-</body>
-
 <!-- ============= 
 	SCRIPTS
 ==================-->
@@ -113,6 +111,23 @@
     $(document).foundation();
   </script>
 <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+<script>
+jQuery(document).ready(function($) {
+  $(window).scroll(function() {
+    var scrollPos = $(window).scrollTop(),
+        navbar = $('nav');
+
+    if (scrollPos > 900) {
+      navbar.addClass('alt-color');
+    } else {
+      navbar.removeClass('alt-color');
+    }
+  });
+});
+</script>
+</body>
+
+
 </html>
 
 

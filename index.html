@@ -66,12 +66,12 @@
   <div class="row">
     <div class="column small-12 medium-6">
       <div class="flex-video">
-        <iframe width="500" height="270" src="https://www.youtube.com/embed/_ZlglvuWdwg" frameborder="0" allowfullscreen></iframe>
+        <iframe width="500" height="270" src="https://www.youtube.com/embed/_ZlglvuWdwg" frameborder="0" wmode="Opaque" allowfullscreen></iframe>
       </div>
     </div>
     <div class="column small-12 medium-6">
       <div class="flex-video">
-        <iframe width="500" height="270" src="https://www.youtube.com/embed/s_B7TOTB6Xs" frameborder="0" allowfullscreen></iframe>
+        <iframe width="500" height="270" src="https://www.youtube.com/embed/s_B7TOTB6Xs" frameborder="0" wmode="Opaque" allowfullscreen></iframe>
       </div>
     </div>
     <div class="row">
@@ -199,6 +199,13 @@ jQuery(document).ready(function($) {
     }
   });
 });
+</script>
+<script>
+var iFramesOnPage = document.getElementsByTagName("IFRAME");
+for(var i = 0; i < iFramesOnPage.length; i++) { 
+    var newiFrameURL = iFramesOnPage[i].getAttribute("src")+"?wmode=transparent"; 
+    iFramesOnPage[i].setAttribute("src", newiFrameURL);
+};
 </script>
 </body>
 </html>

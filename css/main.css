@@ -34,11 +34,11 @@ nav {
     top:0;
     width:100%;
     padding:1em 0;
-	z-index: 1;
+	z-index: 3;
 	}
 nav.alt-color {
 	background-color:#F3F2F2;
-	z-index: 1;
+	z-index: 3;
 	}
 li {
 	display:inline-block;
@@ -251,7 +251,7 @@ a {
   padding-bottom: 67.5%;
   padding-top: 1.5625rem;
   position: relative;
-  z-index: -1; }
+  z-index: 1; }
   .flex-video.widescreen {
     padding-bottom: 56.34%; }
   .flex-video.vimeo {
@@ -264,11 +264,17 @@ a {
     position: absolute;
     top: 0;
     width: 100%;
+<<<<<<< HEAD
     left: 0; }
 	
 	
 	
 /*-------------------
+=======
+    left: 0;
+	z-index:1; }
+/*----------
+>>>>>>> origin/master
 	EVENTS
 --------------------*/
 .events {

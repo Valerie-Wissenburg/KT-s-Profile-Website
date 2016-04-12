@@ -74,6 +74,20 @@
     </div>
 </footer>
 
+<script>
+jQuery(document).ready(function($) {
+  $(window).scroll(function() {
+    var scrollPos = $(window).scrollTop(),
+        navbar = $('nav');
+
+    if (scrollPos > 900) {
+      navbar.addClass('alt-color');
+    } else {
+      navbar.removeClass('alt-color');
+    }
+  });
+});
+</script>
 
 </body>
 
