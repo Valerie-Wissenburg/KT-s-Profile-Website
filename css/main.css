@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, p, blockquote, li, a, nav, article, label {
 font-family: 'Muli', sans-serif;
 }
 
+h1, h2, blockquote, li, article {
+	text-transform:uppercase;
+}
+
 
 /*----------
 	NAV
@@ -33,7 +37,7 @@ li {
 	background-color: none;
 }
 #KT-top-bar{
-	font-size:2.4rem;
+	font-size:2rem;
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background-color: none;
@@ -47,28 +51,19 @@ a {
 .sticky {
 	width:100%;
 	}
+	
+	
 /*-----------------
 	INSTAGRAM FEED
 -------------------*/
 #insta-feed {
-	padding: 9.5rem 0;
+	padding: 2.5rem 0 9.5rem 0;
 	}
+	
+	
 /*-----------------
 	NAV BAR 
 -------------------*/
-
-
-/*----------------
-FONTS 
-@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300");
-html{font-size: 62.5%; font-family: 'Open Sans', sans-serif;}
-body{font-size: 1.6rem; min-height: 100vh;}
-h1{font-size: 3rem; margin-bottom: 1rem;}
-h2{font-size: 1.6rem;}
-header{position: relative; background: #FFF;}
-main{padding: 2rem;}
--------------------- */
 
 /***************** NAVIGATION ********************/
 
@@ -92,7 +87,7 @@ nav a{
 	text-decoration: none;
 	color: inherit;
 	display:block;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 nav a:hover{
