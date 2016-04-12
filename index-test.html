@@ -159,5 +159,13 @@
    <script>
     $(document).foundation();
   </script>
+  <script>
+  $(function() {
+    $("a[href=#menuExpand]").click(function(e) {
+        $(".menu").toggleClass("menuOpen");
+        e.preventDefault();
+    });
+});
+</script>
 </body>
 </html>
