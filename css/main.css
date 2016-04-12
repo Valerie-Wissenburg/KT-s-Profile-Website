@@ -11,8 +11,154 @@
 }
 
 
+/*----------
+	NAV
+------------*/
+nav {
+	width: 100%;
+	}
+li {
+	display:inline-block;
+	padding: 10px 45px;
+	}
+.top-bar {
+	background-color: none;
+}
+#KT-top-bar{
+	font-size:2.4rem;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: none;
+}
+a {
+	color: #2B2B2B;
+	}
+.fixed {
+	position:fixed;
+	}
+.sticky {
+	width:100%;
+	}
+	
+/*-----------------
+	NAV BAR 
+-------------------*/
 
-/*-- MERCH COLLAGE ============ --*/
+
+/*----------------
+FONTS 
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300");
+html{font-size: 62.5%; font-family: 'Open Sans', sans-serif;}
+body{font-size: 1.6rem; min-height: 100vh;}
+h1{font-size: 3rem; margin-bottom: 1rem;}
+h2{font-size: 1.6rem;}
+header{position: relative; background: #FFF;}
+main{padding: 2rem;}
+-------------------- */
+
+/***************** NAVIGATION ********************/
+
+/*--------------------
+nav ul{
+	display: flex; 
+	flex-wrap: wrap; 
+	max-width: 1080px; 
+	margin: 0 auto;
+	list-style: none;
+	padding: 0;		
+}
+---------------- */
+
+nav ul,
+nav li{
+	flex: 1;	
+}
+nav li:last-child{border-bottom: none;}
+nav a{
+	text-decoration: none;
+	color: inherit;
+	display:block;
+	font-size: 1.2rem;
+}
+
+nav a:hover{
+	color: teal;
+	text-decoration:underline;
+}
+
+/* ------------
+nav li{
+	position: relative;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+}  
+---------- */
+
+nav input,
+nav label{
+	display: none;
+	width: 36px; 
+	height: 36px; 
+	background: #555; 
+	color: #fff; 
+	text-align: center; 
+	line-height: 36px;
+	font-size: 1.6rem;
+	border-radius: 4px;
+} 
+
+
+nav label{position: absolute; top: 8px; right: 8px; transition: .4s;}
+nav label:hover{cursor:pointer;}
+
+/* ------
+nav label:before{
+	font-family: FontAwesome;
+	font-size: 24px;
+	content: "\f0c9";
+	text-align: center;
+}
+------- */
+
+
+/*************** MEDIA QUERIES *******************/
+@media only screen and (max-width: 1080px){
+	nav ul{
+		display: none; 
+		box-shadow: 0 0 5px rgba(0,0,0, .7);
+	}
+
+	nav li{
+		flex: none; 
+		width: 100%;
+		border-bottom: solid 1px #777;
+	} 
+ 
+	nav input[type="checkbox"]:checked + ul{
+		display: block;
+		width: 100%;
+		background: #999;          
+	}
+	nav label{display: block;} 
+	
+	nav input[type="checkbox"]:checked + ul li:nth-child(1){
+		background: #777; 
+		color: #fff;
+	} 
+
+}
+/* --------------------
+	END OF NAV
+--------------------- */
+
+
+
+
+/*-- =========================
+	MERCH COLLAGE 
+========================== --*/
 
 .header-alignment {
 	display: block;
@@ -47,33 +193,10 @@
 }  
 
 /*-- END OF MERCH COLLAGE ============ --*/
-
-
-/*----------
-	NAV
-------------*/
-nav {
-	width: 100%;
-	}
-li {
-	display:inline-block;
-	padding: 10px 45px;
-	}
-.top-bar {
-	background-color: none;
-}
-.top-bar-section li:not(.has-form) a:not(.button) {
-	background-color: none;
-}
-a {
-	color: #2B2B2B;
-	}
-.fixed {
-	position:fixed;
-	}
-.sticky {
-	width:100%;
-	}
+	
+	
+	
+	
 /*----------
 	MEDIA
 ------------*/
@@ -174,114 +297,3 @@ footer {
 }
 
 
-
-
-/*-----------------
-	NAV BAR 
--------------------*/
-
-
-/*----------------
-FONTS 
-@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300");
-html{font-size: 62.5%; font-family: 'Open Sans', sans-serif;}
-body{font-size: 1.6rem; min-height: 100vh;}
-h1{font-size: 3rem; margin-bottom: 1rem;}
-h2{font-size: 1.6rem;}
-header{position: relative; background: #FFF;}
-main{padding: 2rem;}
--------------------- */
-
-/***************** NAVIGATION ********************/
-
-/*--------------------
-nav ul{
-	display: flex; 
-	flex-wrap: wrap; 
-	max-width: 1080px; 
-	margin: 0 auto;
-	list-style: none;
-	padding: 0;		
-}
----------------- */
-
-nav ul,
-nav li{
-	flex: 1;	
-}
-nav li:last-child{border-bottom: none;}
-nav a{
-	text-decoration: none;
-	color: inherit;
-	display:block;
-	font-size: 1.4rem;
-}
-
-nav a:hover{
-	color: teal;
-	text-decoration:underline;
-}
-
-/* ------------
-nav li{
-	position: relative;
-	line-height: 50px;
-	color: #fff;
-	text-align: center;
-}  
----------- */
-
-nav input,
-nav label{
-	display: none;
-	width: 36px; 
-	height: 36px; 
-	background: #555; 
-	color: #fff; 
-	text-align: center; 
-	line-height: 36px;
-	font-size: 1.6rem;
-	border-radius: 4px;
-} 
-
-
-nav label{position: absolute; top: 8px; right: 8px; transition: .4s;}
-nav label:hover{cursor:pointer;}
-
-/* ------
-nav label:before{
-	font-family: FontAwesome;
-	font-size: 24px;
-	content: "\f0c9";
-	text-align: center;
-}
-------- */
-
-
-/*************** MEDIA QUERIES *******************/
-@media only screen and (max-width: 1080px){
-	nav ul{
-		display: none; 
-		box-shadow: 0 0 5px rgba(0,0,0, .7);
-	}
-
-	nav li{
-		flex: none; 
-		width: 100%;
-		border-bottom: solid 1px #777;
-	} 
- 
-	nav input[type="checkbox"]:checked + ul{
-		display: block;
-		width: 100%;
-		background: #999;          
-	}
-	nav label{display: block;} 
-	
-	nav input[type="checkbox"]:checked + ul li:nth-child(1){
-		background: #777; 
-		color: #fff;
-	} 
-
-}
