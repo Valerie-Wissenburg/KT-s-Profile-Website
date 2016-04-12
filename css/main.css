@@ -27,7 +27,18 @@ h1, h2, blockquote, li, article {
 	NAV
 ------------*/
 nav {
-	width: 100%;
+	background-color:transparent;
+    color:: black;
+    transition: all 0.25s ease;
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:1em 0;
+	z-index: 1;
+	}
+nav.alt-color {
+	background-color:#F3F2F2;
+	z-index: 1;
 	}
 li {
 	display:inline-block;
@@ -239,7 +250,8 @@ a {
   overflow: hidden;
   padding-bottom: 67.5%;
   padding-top: 1.5625rem;
-  position: relative; }
+  position: relative;
+  z-index: -1; }
   .flex-video.widescreen {
     padding-bottom: 56.34%; }
   .flex-video.vimeo {

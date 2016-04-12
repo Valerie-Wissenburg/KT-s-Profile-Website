@@ -44,7 +44,7 @@
 <!-- ============= 
 	HERO
 ==================-->
-<section id="home">
+<section id="home" class="alt-color">
   <div class="hero"> <img src="imgs/hero-img.jpg" alt="Hero Image"> </div>
 </section>
 <div id="wrapper">
@@ -186,5 +186,19 @@
     $(document).foundation();
   </script> 
 <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+<script>
+jQuery(document).ready(function($) {
+  $(window).scroll(function() {
+    var scrollPos = $(window).scrollTop(),
+        navbar = $('nav');
+
+    if (scrollPos > 900) {
+      navbar.addClass('alt-color');
+    } else {
+      navbar.removeClass('alt-color');
+    }
+  });
+});
+</script>
 </body>
 </html>
