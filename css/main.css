@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, p, blockquote, li, a, nav, article, label {
 font-family: 'Muli', sans-serif;
 }
 
-h1, h2, blockquote, li, article {
+h1, h2, blockquote, li {
 	text-transform:uppercase;
 }
 
@@ -265,9 +265,12 @@ a {
     top: 0;
     width: 100%;
     left: 0; }
-/*----------
+	
+	
+	
+/*-------------------
 	EVENTS
-------------*/
+--------------------*/
 .events {
 	background:url(../imgs/51_Events.jpg);
 	height: 1200px;
@@ -294,13 +297,15 @@ a {
     font-size: 2rem; }
 
 .event-desc {
-	height: 92px;
-	width: 278px;
+	height: 85px;
+	width: 350px;
 	background: white;
-  padding: 0 0 0 1rem;
-  text-align: left;
-  display: table-cell;
-  vertical-align: top; }
+  	padding:.5rem 0 0 1rem;
+  	text-align: left;
+  	display: table-cell;
+  	vertical-align: top; }
+  
+  
   .event-desc .event-desc-header {
     margin: 0 0 0.5rem 0;
     padding: 0; }
@@ -319,6 +324,9 @@ a {
 .events-title {
 	padding: 9rem 0;
 	}
+	
+
+
 /*----------------
 	FOOTER
 ------------------*/
