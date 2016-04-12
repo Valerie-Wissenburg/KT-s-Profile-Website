@@ -193,26 +193,13 @@ nav label:before{
 }  
 
 /*-- END OF MERCH COLLAGE ============ --*/
-<<<<<<< Updated upstream
-	
-	
-	
-	
-=======
-=======
+
 
 /*----------
 	NAV
 ------------*/
 nav {
-    position: fixed;
     width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    letter-spacing: .2em;
-    line-height: 1;
-    padding: 30px;
 }
 li {
 	display:inline-block;
@@ -233,7 +220,6 @@ a {
 .sticky {
 	width:100%;
 	}
->>>>>>> Stashed changes
 /*----------
 	MEDIA
 ------------*/
