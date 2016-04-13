@@ -53,6 +53,7 @@
 	MEDIA
 ==================--> 
 <section id="media">
+<div class="light-gray-triangle">
 <div class="row">
   <h2>Media</h2>
   <h4>Instagram Feed</h4>
@@ -65,9 +66,9 @@
 <div>
   <div class="row">
     <div class="column small-12 medium-6">
-      <div class="flex-video">
-        <iframe width="500" height="270" src="https://www.youtube.com/embed/_ZlglvuWdwg" frameborder="0" wmode="Opaque" allowfullscreen></iframe>
-      </div>
+      <div class="flex-video"><a href=
+        "video-see-me-now.html"><iframe width="500" height="270" src="https://www.youtube.com/embed/_ZlglvuWdwg?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+      </a></div>
     </div>
     <div class="column small-12 medium-6">
       <div class="flex-video">
@@ -80,6 +81,7 @@
       </div>
     </div>
   </div>
+</div>
   </section>
   
   <!-- ============= 
@@ -152,8 +154,8 @@
         <h2> Bio </h2>
         <h4>Ya Boi KT</h4>
       </header>
-      <p>Born and raised in Milwaukee, WI, Ya Boi KT has always possessed a love for music. From singing solos in his local church to winning the Director's Award in his grade school band, this young artist has many proud accomplishments under his belt. While attending Rufus King IB High School, he also was a part of the now 8-time city championship drumline.</p>
-      <a href="bio-page.html">Finish Reading Bio</a> </div>
+      <p class="column small-9 large-8">Born and raised in Milwaukee, WI, Ya Boi KT has always possessed a love for music. From singing solos in his local church to winning the Director's Award in his grade school band, this young artist has many proud accomplishments under his belt. While attending Rufus King IB High School, he also was a part of the now 8-time city championship drumline.</p></div>
+      <div><a href="bio-page.html">Finish Reading Bio</a> </div>
   </section>
   
   <!-- ============= 
@@ -201,11 +203,14 @@ jQuery(document).ready(function($) {
 });
 </script>
 <script>
-var iFramesOnPage = document.getElementsByTagName("IFRAME");
-for(var i = 0; i < iFramesOnPage.length; i++) { 
-    var newiFrameURL = iFramesOnPage[i].getAttribute("src")+"?wmode=transparent"; 
-    iFramesOnPage[i].setAttribute("src", newiFrameURL);
-};
+$(document).ready(function() {
+   $("iframe").each(function(){
+      var ifr_source = $(this).attr('src');
+      var wmode = "wmode=transparent";
+      if(ifr_source.indexOf('?') != -1) $(this).attr('src',ifr_source+'&'+wmode);
+      else $(this).attr('src',ifr_source+'?'+wmode);
+   });
+});
 </script>
 </body>
 </html>
