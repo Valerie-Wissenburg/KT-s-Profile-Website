@@ -14,12 +14,14 @@ section {
 	padding-top: 10rem;
 	}
 
-h1, h2, h3, h4, h5, p, blockquote, li, a, nav, article, label {
-font-family: 'Muli', sans-serif;
+h1, h2, h3, h4, h5, p, blockquote, li, a, nav, label {
+	font-family: 'Muli', sans-serif;
+	color:#4c4c4d;
 }
 
 h1, h2, blockquote, li {
 	text-transform:uppercase;
+	color:#4c4c4d;
 }
 .light-gray-triangle {
 	background: url(../imgs/light-gray-triangle.png) no-repeat; 
@@ -326,6 +328,7 @@ a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin: 0; }
+	
 .events-padding {
 	padding: 5rem 0;
 	}
@@ -367,7 +370,9 @@ footer {
 	margin-bottom:1.2rem;
 }
 
-
+#music-p-margin {
+	margin-top:3.5rem;
+}
 
 
 
