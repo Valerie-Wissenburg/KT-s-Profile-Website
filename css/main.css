@@ -32,7 +32,7 @@ h1, h2, blockquote, li {
 ------------*/
 nav {
 	background-color:transparent;
-    color:: black;
+    color: black;
     transition: all 0.25s ease;
     position:fixed;
     top:0;
@@ -66,19 +66,6 @@ a {
 .sticky {
 	width:100%;
 	}
-	
-	
-/*-----------------
-	INSTAGRAM FEED
--------------------*/
-#insta-feed {
-	padding: 2.5rem 0 9.5rem 0;
-	}
-	
-	
-/*-----------------
-	NAV BAR 
--------------------*/
 
 /***************** NAVIGATION ********************/
 
@@ -109,6 +96,29 @@ nav a:hover{
 	color: teal;
 	text-decoration:underline;
 }
+
+nav {
+    width: 100%;
+}
+li {
+	display:inline-block;
+	padding: 10px 45px;
+	}
+.top-bar {
+	background-color: none;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: none;
+}
+a {
+	color: #2B2B2B;
+	}
+.fixed {
+	position:fixed;
+	}
+.sticky {
+	width:100%;
+	}
 
 /* ------------
 nav li{
@@ -172,12 +182,36 @@ nav label:before{
 	} 
 
 }
-/* --------------------
-	END OF NAV
---------------------- */
 
 
 
+/*---------------------
+	FOOTER
+----------------------*/
+footer {
+	background-color: #4D4D4D;
+	padding: 1rem 0rem;
+	margin-top: 5rem;
+	}
+.icon {
+	width: 40px;
+	}
+ .footer-font-color {
+	 font-color:#fff;
+ }
+
+
+
+
+	
+/*-----------------
+	INSTAGRAM FEED
+-------------------*/
+#insta-feed {
+	padding: 2.5rem 0 9.5rem 0;
+	}
+	
+	
 
 /*-- =========================
 	MERCH COLLAGE 
@@ -217,34 +251,11 @@ nav label:before{
 .no-float {
 	float:left !important;
 	}
+	
+	
 /*-- END OF MERCH COLLAGE ============ --*/
 
 
-/*----------
-	NAV
-------------*/
-nav {
-    width: 100%;
-}
-li {
-	display:inline-block;
-	padding: 10px 45px;
-	}
-.top-bar {
-	background-color: none;
-}
-.top-bar-section li:not(.has-form) a:not(.button) {
-	background-color: none;
-}
-a {
-	color: #2B2B2B;
-	}
-.fixed {
-	position:fixed;
-	}
-.sticky {
-	width:100%;
-	}
 /*----------
 	MEDIA
 ------------*/
@@ -268,17 +279,20 @@ a {
     position: absolute;
     top: 0;
     width: 100%;
-<<<<<<< HEAD
     left: 0; }
 	
 	
 	
 /*-------------------
-=======
     left: 0;
 	z-index:1; }
-/*----------
->>>>>>> origin/master
+---------- */	
+	
+	
+	
+	
+	
+/*------------------
 	EVENTS
 --------------------*/
 .events {
@@ -336,19 +350,13 @@ a {
 	padding: 9rem 0;
 	}
 	
-
-
 /*----------------
-	FOOTER
+	BIO SNIPET
 ------------------*/
-footer {
-	background-color: #4D4D4D;
-	padding: 1rem 0rem;
-	margin-top: 5rem;
-	}
-.icon {
-	width: 40px;
-	}
+#bio-link {
+	margin-top:7rem;
+}
+
 	
 /*----------------
 	VIDEO PAGE
@@ -356,7 +364,6 @@ footer {
 .video-title {
 	margin: 18rem 3.8rem;
 	}
-	
 	
 	
 /*----------------
@@ -375,10 +382,9 @@ footer {
 }
 
 
-
-/*----------------
-	SLIDESHOW
-------------------*/
+/*-------------------------
+	SLIDESHOW ON BIO PAGE
+--------------------------*/
 
 /* jssor slider bullet navigator skin 03 css */
         /*
