@@ -23,8 +23,10 @@ h1, h2, blockquote, li {
 	text-transform:uppercase;
 	color:#4c4c4d;
 }
-.light-gray-triangle {
-	background: url(../imgs/light-gray-triangle.png) no-repeat; 
+body {
+	background: url(../imgs/light-gray-triangle.png) no-repeat;
+	background-position: 100% 25%;
+	width: 100%;
 	}
 
 /*----------
