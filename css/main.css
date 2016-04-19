@@ -62,7 +62,7 @@ li {
 	margin-left: 20px;
 	}
 .sliding-hover:hover {
-	border-bottom: 3px solid teal;
+	border-bottom: 3px solid #407196;
 	width: 150px;
 	margin-left:40px;
 	}
@@ -112,7 +112,7 @@ nav a{
 }
 
 nav a:hover{
-	color: teal;
+	color: #407196;
 }
 
 nav {
@@ -130,6 +130,9 @@ li {
 }
 a {
 	color: #2B2B2B;
+	}
+a:hover {
+	color: #407196;
 	}
 .fixed {
 	position:fixed;
