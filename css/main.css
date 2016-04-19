@@ -46,16 +46,32 @@ nav {
 nav.alt-color {
 	background-color:#F3F2F2;
 	z-index: 3;
+	height: 6rem;
 	}
 li {
 	display:inline-block;
-	padding: 10px 45px;
+	padding: 2rem 3.5rem;
+	}
+.sliding-hover {
+	text-decoration: none;
+    border-bottom: 3px solid transparent;    
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+	display: inline-block;
+	margin-left: 20px;
+	}
+.sliding-hover:hover {
+	border-bottom: 3px solid teal;
+	width: 150px;
+	margin-left:40px;
 	}
 .top-bar {
 	background-color: none;
 }
 #KT-top-bar{
 	font-size:2rem;
+	padding: 0 4.5rem;
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background-color: none;
@@ -65,6 +81,7 @@ a {
 	}
 .fixed {
 	position:fixed;
+	z-index: 2;
 	}
 .sticky {
 	width:100%;
@@ -91,13 +108,11 @@ nav li:last-child{border-bottom: none;}
 nav a{
 	text-decoration: none;
 	color: inherit;
-	display:block;
 	font-size: 1rem;
 }
 
 nav a:hover{
 	color: teal;
-	text-decoration:underline;
 }
 
 nav {
@@ -200,7 +215,7 @@ footer {
 	width: 40px;
 	}
  .footer-font-color {
-	 font-color:#fff;
+	 font-color: #4c4c4d;
  }
 
 
@@ -254,6 +269,10 @@ footer {
 .no-float {
 	float:left !important;
 	}
+.triangle {
+	background: url(../imgs/light-gray-triangle.png) no-repeat;
+	background-position: 100% 190%;
+	}
 	
 	
 /*-- END OF MERCH COLLAGE ============ --*/
@@ -299,8 +318,9 @@ footer {
 	EVENTS
 --------------------*/
 .events {
-	background:url(../imgs/51_Events.jpg);
-	height: 1200px;
+	background:url(../imgs/51_Events.jpg) no-repeat;
+	max-width: 100%;
+	height: auto;
 }
 .event {
   padding: 1rem 1rem 1rem 0;
@@ -347,10 +367,10 @@ footer {
     margin: 0; }
 	
 .events-padding {
-	padding: 5rem 0;
+	padding: 2rem 0;
 	}
 .events-title {
-	padding: 9rem 0;
+	padding: 9rem 0 7rem 0;
 	}
 	
 /*----------------
