@@ -403,7 +403,7 @@ footer {
 	BIO PAGE
 ------------------*/
 #bio-page-tp-mrgn{
-	margin-top:2rem;
+	margin-top:15rem;
 }
 
 .img-spacing {
@@ -420,6 +420,16 @@ footer {
 
 .bio-center{
 	margin: 0 auto;
+}
+
+.right {
+	float:right;
+	margin-right:11rem;
+	margin-top:12rem;
+}
+
+.connect-links {
+	padding: 0 .5rem;
 }
 
 /*-------------------------
