@@ -14,7 +14,7 @@ section {
 	padding-top: 10rem;
 	}
 
-h1, h2, h3, h4, h5, p, blockquote, li, a, nav, label {
+h1, h2, h3, h4, p, blockquote, li, a, nav, label {
 	font-family: 'Muli', sans-serif;
 	color:#4c4c4d;
 }
@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5, p, blockquote, li, a, nav, label {
 h1, h2, blockquote, li {
 	text-transform:uppercase;
 	color:#4c4c4d;
+}
+
+h5 {
+	color:#fff;
+	size:.4rem;
 }
 
 body {
