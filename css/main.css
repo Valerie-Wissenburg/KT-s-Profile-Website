@@ -403,7 +403,7 @@ footer {
 	BIO PAGE
 ------------------*/
 #bio-page-tp-mrgn{
-	margin-top:10rem;
+	margin-top:2rem;
 }
 
 .img-spacing {
@@ -414,6 +414,13 @@ footer {
 	margin-top:3.5rem;
 }
 
+.no-float {
+	float:none !important;
+}
+
+.bio-center{
+	margin: 0 auto;
+}
 
 /*-------------------------
 	SLIDESHOW ON BIO PAGE
@@ -507,5 +514,8 @@ footer {
 		margin:.5rem .2rem;
 		padding:0;
 	}
+	#bio-page-tp-mrgn{
+	margin-top:0;
+}
 	
 }
