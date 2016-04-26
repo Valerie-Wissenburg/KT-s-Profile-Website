@@ -91,7 +91,6 @@ a {
 .sticky {
 	width:100%;
 	}
-
 /***************** NAVIGATION ********************/
 
 /*--------------------
@@ -157,10 +156,11 @@ nav li{
 
 nav input,
 nav label{
-	display: none;
-	width: 36px; 
-	height: 36px; 
-	background: #555; 
+	display:none;
+	width: 35px; 
+	height: 35px; 
+	background-image:url(../imgs/hamburger.svg);
+	background-repeat:no-repeat;
 	color: #fff; 
 	text-align: center; 
 	line-height: 36px;
@@ -169,7 +169,9 @@ nav label{
 } 
 
 
-nav label{position: absolute; top: 8px; right: 8px; transition: .4s;}
+nav label{
+	position: absolute; top: 8px; right: 8px; transition: .4s;
+	}
 nav label:hover{cursor:pointer;}
 
 /* ------
