@@ -200,7 +200,7 @@ nav label:before{
 	nav input[type="checkbox"]:checked + ul{
 		display: block;
 		width: 100%;
-		background: #999;          
+		background: #efefef;          
 	}
 	nav label{display: block;} 
 	
@@ -484,8 +484,13 @@ footer {
 
 /* Medium screens */
 @media only screen and (max-width: 48em) {
-	
-}
+	.sliding-hover {
+	width:100%;
+	}
+	a:li {
+		color: white;
+		}
+
 
 /* Small Screens --- max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 30em) {
@@ -502,4 +507,5 @@ footer {
 		margin:.5rem .2rem;
 		padding:0;
 	}
+	
 }
