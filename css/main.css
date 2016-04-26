@@ -472,3 +472,32 @@ footer {
         .jssora03l.jssora03ldn { background-position: -243px -33px; }
         .jssora03r.jssora03rdn { background-position: -303px -33px; }
 
+
+
+
+
+
+
+/* --------------- MEDIA QUERIES -------------------- */
+
+/* Medium screens */
+@media only screen and (max-width: 48em) {
+	
+}
+
+/* Small Screens --- max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 30em) {
+	p, h1, h2, h3, h4, blockquote, li, a, nav, label {
+		margin: 0 2rem;
+	}
+	
+	header {
+		margin-top: 2rem;
+		margin-bottom: .5rem;
+	}
+	
+	.social-media-links {
+		margin:.5rem .2rem;
+		padding:0;
+	}
+}
