@@ -12,12 +12,12 @@
 
 <body>
 
-<!-----------
+<!-- ==========
  	NAV
-------------->
+=============== -->
 <header>
   <div class="contain-to-grid sticky fixed">
-    <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: small, medium, large">
+    <nav class="top-bar" data-topbar data-options="sticky_on: small, medium, large">
       <div class="top-bar-section row"> 
         <!-- Right Nav Section -->
         <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
@@ -59,8 +59,8 @@
         <blockquote> Be Opinionated- ‘Voice your thoughts. Give your two cents. Be Opinionated.’ </blockquote>
       </div>
     </div>
-  </div>
 </section>
+</div>
 
 <!-- ===============
 SLIDE SHOW
@@ -73,22 +73,22 @@ SLIDE SHOW
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 809px; height: 150px; overflow: hidden;">
             <div style="display: none;">
-                <img data-u="image" src="imgs/slide-show-img-1.jpg" />
+                <img data-u="image" src="imgs/slide-show-img-1.jpg" alt=" "/>
             </div>
             <div style="display: none;">
-                <img data-u="image" src="imgs/slide-show-img-2.jpg" />
+                <img data-u="image" src="imgs/slide-show-img-2.jpg" alt=" "/>
             </div>
             <div style="display: none;">
-                <img data-u="image" src="imgs/slide-show-img-3.jpg" />
+                <img data-u="image" src="imgs/slide-show-img-3.jpg" alt=" " />
             </div>
             <div style="display: none;">
-                <img data-u="image" src="imgs/slide-show-img-4.jpg" />
+                <img data-u="image" src="imgs/slide-show-img-4.jpg" alt=" "/>
             </div>
             <div style="display: none;">
-                <img data-u="image" src="imgs/slide-show-img-5.jpg" />
+                <img data-u="image" src="imgs/slide-show-img-5.jpg" alt=" " />
             </div>
             <div style="display: none;">
-                <img data-u="image" src="imgs/slide-show-img-6.jpg" />
+                <img data-u="image" src="imgs/slide-show-img-6.jpg"  alt=" "/>
             </div>
             <a data-u="ad" href="http://www.jssor.com" style="display:none">jQuery Slider</a>
         </div>
@@ -132,15 +132,19 @@ SLIDE SHOW
 
 <!-- ============= 
 	FOOTER
-==================-->
+================== -->
 <footer>
   <div class="row text-center">
     <ul>
-      <li class="social-media-links"><a href="https://www.twitter.com/yaboikt" target="_blank"><img class="icon" src="imgs/twitter-icon.svg" alt="twitter" class="img-responsive"></a></li>
-      <li class="social-media-links"><a href="https://www.facebook.com/ItsYaBoiKT" target="_blank"><img class="icon" src="imgs/facebook-icon.svg" alt="facebook icon, Icon made by Freepik from www.flaticon.com " class="img-responsive"></a></li>
-      <li class="social-media-links"><a href="https://www.instagram.com/officialyaboikt" target="_blank"><img class="icon" src="imgs/instagram-icon.svg" alt="instagram" class="img-responsive"></a></li>
-      <li class="social-media-links"><a href="https://www.soundcloud.com/yaboikt" target="_blank"><img class="icon" src="imgs/soundcloud-icon.svg" alt="sound cloud" class="img-responsive"></a></li>
-      <li class="social-media-links"><a href="https://www.youtube.com/channel/UCZ0xy7RO8VoWcjoYPR-GFmg" target="_blank"><img class="icon" src="imgs/youtube-icon.svg" alt="youtube" class="img-responsive"></a></li>
+      <li class="social-media-links">
+      	<a href="https://www.twitter.com/yaboikt" target="_blank"><img class="icon img-responsive" src="imgs/twitter-icon.svg" alt="twitter"></a>
+      </li>
+      <li class="social-media-links">
+      	<a href="https://www.facebook.com/ItsYaBoiKT" target="_blank"><img class="icon img-responsive" src="imgs/facebook-icon.svg" alt="facebook icon, Icon made by Freepik from www.flaticon.com"></a>
+      </li>
+      <li class="social-media-links"><a href="https://www.instagram.com/officialyaboikt" target="_blank"><img class="icon img-responsive" src="imgs/instagram-icon.svg" alt="instagram"></a></li>
+      <li class="social-media-links"><a href="https://www.soundcloud.com/yaboikt" target="_blank"><img class="icon img-responsive" src="imgs/soundcloud-icon.svg" alt="sound cloud"></a></li>
+      <li class="social-media-links"><a href="https://www.youtube.com/channel/UCZ0xy7RO8VoWcjoYPR-GFmg" target="_blank"><img class="icon img-responsive" src="imgs/youtube-icon.svg" alt="youtube"></a></li>
     </ul>
   </div>
   <div class="row text-center">
@@ -150,7 +154,7 @@ SLIDE SHOW
 </footer>
 <!-- ============= 
 	SCRIPTS
-==================-->
+================== -->
 <script src="js/vendor/modernizr.js"></script>
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/foundation.min.js"></script>
@@ -200,8 +204,7 @@ jQuery(document).ready(function($) {
             
             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
             
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
+            <!-- responsive code begin you can remove responsive code if you don't want the slider scales while window resizing -->
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
@@ -216,7 +219,7 @@ jQuery(document).ready(function($) {
             $(window).bind("load", ScaleSlider);
             $(window).bind("resize", ScaleSlider);
             $(window).bind("orientationchange", ScaleSlider);
-            //responsive code end
+            <!-- responsive code end  -->
         });
     </script>
 </body>
