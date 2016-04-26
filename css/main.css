@@ -29,11 +29,6 @@ h5 {
 	size:.4rem;
 }
 
-body {
-	background: url(../imgs/light-gray-triangle.png) no-repeat;
-	background-position: 100% 25%;
-	width: 100%;
-}
 
 /*----------
 	NAV
@@ -280,8 +275,7 @@ footer {
 	float:left !important;
 	}
 .triangle {
-	background: url(../imgs/light-gray-triangle.png) no-repeat;
-	background-position: 100% 190%;
+	background:url(../imgs/light-gray-triangle.svg) no-repeat;
 	}
 	
 	
@@ -312,8 +306,6 @@ footer {
     top: 0;
     width: 100%;
     left: 0; }
-	
-	
 	
 /*-------------------
     left: 0;
