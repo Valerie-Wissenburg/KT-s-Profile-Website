@@ -397,8 +397,31 @@ a:hover.merch-button {
 /*----------------
 	BIO SNIPET
 ------------------*/
+#bio-margin {
+	margin-top:55rem;
+}
+
 #bio-link {
-	margin-top:7rem;
+	margin-top:3rem;
+}
+
+.bio-button {
+	background-color: transparent;
+	-moz-border-radius: .875rem;
+	-webkit-border-radius: .875rem;
+	border-radius: .875rem;
+	border: .125rem solid #407196;
+	display: inline-block;
+	cursor: pointer;
+	color: #407196;
+	font-size: 1.0625rem;
+	padding: .5625rem 2.5625rem;
+	text-decoration: none;
+}
+a:hover.bio-button {
+	background-color: #407196;
+	color: #efefef;
+	border: .125rem solid #efefef;
 }
 
 	
