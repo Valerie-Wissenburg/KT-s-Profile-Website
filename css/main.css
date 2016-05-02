@@ -617,25 +617,13 @@ section {
 	display: none;
 }
 
-.event {
-	padding: .5rem;
-	display: table;
-}
 .event-date {
-	width: 6rem;
 	margin: 0 auto 1rem;
-	display: table-cell;
-	width: auto;
 }
 .event-date .event-month {
-	margin: 0;
-	background: #eee;
 	padding: .3rem 1rem 1.1rem 1rem;
-	text-align: center;
 }
 .event-date .event-day {
-	margin: 0;
-	background: #eee;
 	padding: .4rem 1.5rem;
 	text-align: center;
 	font-size: .9rem;
@@ -643,11 +631,7 @@ section {
 .event-desc {
 	height: 60px;
 	width: 350px;
-	background: white;
 	padding: .5rem 0 0 1rem;
-	text-align: left;
-	display: table-cell;
-	vertical-align: top;
 }
 .button-event {
 	font-size: .7rem;
@@ -663,9 +647,7 @@ section {
 	padding: 0 0 .5rem 0;
 	font-size:.7rem;
 }
-.event-desc .event-desc-time {
-	font-weight: bold;
-}
+
 .event-desc .rsvp.button-event {
 	padding-top: 0.4rem;
 	padding-bottom: 0.4rem;
