@@ -225,8 +225,6 @@ footer {
  }
 
 
-
-
 	
 /*-----------------
 	INSTAGRAM FEED
@@ -235,7 +233,13 @@ footer {
 	padding: 2.5rem 0 9.5rem 0;
 	}
 	
-	
+/*-- ==============
+	VIDEO SECTION
+============== --*/	
+#video-p-margin {
+	margin-top:1rem;
+}
+
 
 /*-- =========================
 	MERCH COLLAGE 
@@ -406,9 +410,10 @@ a:hover#button-event {
 	
 .events-padding {
 	padding: 2rem 0;
+	margin-bottom:10rem;
 	}
 .events-title {
-	padding: 9rem 0 7rem 0;
+	padding: 9rem 0 3rem 0;
 	color: #ffffff;
 	}
 	
