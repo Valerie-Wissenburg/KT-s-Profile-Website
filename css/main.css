@@ -40,13 +40,12 @@ nav {
     position:fixed;
     top:0;
     width:100%;
-    padding:1em 0;
 	z-index: 3;
 	}
 nav.alt-color {
 	background-color:#F3F2F2;
 	z-index: 3;
-	height: 6rem;
+	height: 7.7rem;
 	}
 li {
 	display:inline-block;
@@ -57,7 +56,6 @@ li {
     border-bottom: 3px solid transparent;    
     width: 0px;
     transition: 0.5s ease;
-    white-space: nowrap;
 	display: inline-block;
 	margin-left: 20px;
 	}
@@ -71,7 +69,7 @@ li {
 }
 #KT-top-bar{
 	font-size:2rem;
-	padding: 0 4.5rem;
+	padding: 0 3rem;
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background-color: none;
@@ -138,6 +136,10 @@ a:hover {
 	}
 .sticky {
 	width:100%;
+	}
+.logo {
+	position: relative;
+	left:4rem;
 	}
 
 /* ------------
