@@ -42,11 +42,7 @@ nav {
     width:100%;
 	z-index: 3;
 	}
-nav.alt-color {
-	background-color:#F3F2F2;
-	z-index: 3;
-	height: 7.7rem;
-	}
+
 li {
 	display:inline-block;
 	padding: 2rem 3.5rem;
@@ -84,6 +80,7 @@ a {
 .sticky {
 	width:100%;
 	}
+
 /***************** NAVIGATION ********************/
 
 /*--------------------
@@ -137,10 +134,7 @@ a:hover {
 .sticky {
 	width:100%;
 	}
-.logo {
-	position: relative;
-	left:4rem;
-	}
+
 
 /* ------------
 nav li{
@@ -191,22 +185,23 @@ nav label:before{
 	nav li{
 		flex: none; 
 		width: 100%;
-		border-bottom: solid 1px #777;
 	} 
  
 	nav input[type="checkbox"]:checked + ul{
-		display: block;
+		display:block;
 		width: 100%;
-		background: #efefef;          
-	}
+		background: #efefef;  } 
+		       
 	nav label{display: block;} 
 	
-	nav input[type="checkbox"]:checked + ul li:nth-child(1){
+nav input[type="checkbox"]:checked + ul li:nth-child(1){
 		background: #777; 
 		color: #fff;
 	} 
-
-}
+	.main {
+		background:#efefef;
+		}
+} 
 
 
 
@@ -509,7 +504,22 @@ a:hover.merch-button {
 
 
 /* --------------- MEDIA QUERIES -------------------- */
+@media only screen and (min-width: 64.063em) {
+	
+	nav.alt-color {
+	background-color:#F3F2F2;
+	z-index: 3;
+	height: 7.7rem;
+	}
+.logo {
+	position: relative;
+	left:4rem;
+	}
+	 } 
 
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+
+}
 /* Medium screens */
 @media only screen and (max-width: 48em) {
 	.sliding-hover {
@@ -518,8 +528,17 @@ a:hover.merch-button {
 	a:li {
 		color: white;
 		}
+nav.alt-color {
+	background-color:none;
+	z-index: 3;
+	height: none;
+	}
 
+.logo {
+	display:none;
+	}
 
+}
 /* Small Screens --- max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 30em) {
 	p, h1, h2, h3, h4, blockquote, li, a, nav, label {
@@ -538,5 +557,8 @@ a:hover.merch-button {
 	#bio-page-tp-mrgn{
 	margin-top:0;
 }
+.logo {
+	display:none;
+	}
 	
 }
