@@ -141,7 +141,7 @@ nav li{
 ---------- */
 
 nav input, nav label {
-	display: none;
+	display: flex;
 	width: 35px;
 	height: 35px;
 	background-image: url(../imgs/hamburger.svg);
@@ -175,7 +175,7 @@ nav label:before{
 /*************** MEDIA QUERIES *******************/
 @media only screen and (max-width: 1080px) {
 nav ul {
-	display: none;
+	display:none;
 	box-shadow: 0 0 5px rgba(0,0,0, .7);
 }
 nav li {
@@ -615,6 +615,9 @@ section {
 	display: none;
 }
 
+#events {
+	margin-top: 5rem;
+}
 .event-date {
 	margin: 0 auto 1rem;
 }
@@ -657,6 +660,18 @@ section {
 
 .events-padding {
 	padding:.5rem;
+}
+
+#bio-margin {
+	margin-top: 70rem;
+}
+
+.img-spacing {
+	padding: 0 .3em;
+}
+
+#merch {
+	margin-top:-1rem;
 }
 
 }
