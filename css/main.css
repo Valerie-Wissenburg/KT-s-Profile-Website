@@ -277,7 +277,24 @@ footer {
 .triangle {
 	background:url(../imgs/light-gray-triangle.svg) no-repeat;
 	}
-	
+.merch-button {
+	background-color: transparent;
+	-moz-border-radius: .875rem;
+	-webkit-border-radius: .875rem;
+	border-radius: .875rem;
+	border: .125rem solid #407196;
+	display: inline-block;
+	cursor: pointer;
+	color: #407196;
+	font-size: 1.0625rem;
+	padding: .5625rem 2.5625rem;
+	text-decoration: none;
+}
+a:hover.merch-button {
+	background-color: #407196;
+	color: #efefef;
+	border: .125rem solid #efefef;
+}
 	
 /*-- END OF MERCH COLLAGE ============ --*/
 
