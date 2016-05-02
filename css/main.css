@@ -127,7 +127,7 @@ li {
 	background-color: none;
 }
 a {
-	color: #2B2B2B;
+	color: #407196;
 	}
 a:hover {
 	color: #407196;
@@ -279,7 +279,7 @@ footer {
 	background:url(../imgs/light-gray-triangle.svg) no-repeat;
 	background-size: cover;
 	}
-.merch-button {
+.button {
 	background-color: transparent;
 	-moz-border-radius: .875rem;
 	-webkit-border-radius: .875rem;
@@ -288,11 +288,12 @@ footer {
 	display: inline-block;
 	cursor: pointer;
 	color: #407196;
+	text-transform: uppercase;
 	font-size: 1.0625rem;
 	padding: .5625rem 2.5625rem;
 	text-decoration: none;
 }
-a:hover.merch-button {
+a:hover.button {
 	background-color: #407196;
 	color: #efefef;
 	border: .125rem solid #efefef;
@@ -340,8 +341,7 @@ a:hover.merch-button {
 --------------------*/
 .events {
 	background:url(../imgs/51_Events.jpg) no-repeat;
-	max-width: 100%;
-	height: auto;
+	background-size:100%;
 }
 .event {
   padding: 1rem 1rem 1rem 0;
@@ -372,8 +372,25 @@ a:hover.merch-button {
   	text-align: left;
   	display: table-cell;
   	vertical-align: top; }
-  
-  
+ #button-event {
+	background-color: #efefef;
+	-moz-border-radius: .875rem;
+	-webkit-border-radius: .875rem;
+	border-radius: .875rem;
+	border: .125rem solid #407196;
+	display: inline-block;
+	cursor: pointer;
+	color: #407196;
+	text-transform: uppercase;
+	font-size: 1.0625rem;
+	padding: .5625rem 2.5625rem;
+	text-decoration: none;
+}
+a:hover#button-event {
+	background-color: #407196;
+	color: #ffffff;
+	border: .125rem solid #ffffff;
+}
   .event-desc .event-desc-header {
     margin: 0 0 0.5rem 0;
     padding: 0; }
@@ -382,7 +399,7 @@ a:hover.merch-button {
     padding: 0; }
   .event-desc .event-desc-time {
     font-weight: bold; }
-  .event-desc .rsvp.button {
+  .event-desc .rsvp#button-event {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin: 0; }
@@ -392,6 +409,7 @@ a:hover.merch-button {
 	}
 .events-title {
 	padding: 9rem 0 7rem 0;
+	color: #ffffff;
 	}
 	
 /*----------------
@@ -403,6 +421,7 @@ a:hover.merch-button {
 
 #bio-link {
 	margin-top:3rem;
+<<<<<<< HEAD
 }
 
 .bio-button {
@@ -422,6 +441,8 @@ a:hover.bio-button {
 	background-color: #407196;
 	color: #efefef;
 	border: .125rem solid #efefef;
+=======
+>>>>>>> origin/master
 }
 
 	
@@ -465,7 +486,12 @@ a:hover.bio-button {
 .connect-links {
 	padding: 0 .5rem;
 }
-
+#visible-for-small-only {
+	display: none;
+	}
+#visible-for-medium-up {
+	display: block;
+	}
 /*-------------------------
 	SLIDESHOW ON BIO PAGE
 --------------------------*/
@@ -565,7 +591,7 @@ nav.alt-color {
 .logo {
 	display:none;
 	}
-
+	
 }
 /* Small Screens --- max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 30em) {
@@ -588,5 +614,14 @@ nav.alt-color {
 .logo {
 	display:none;
 	}
-	
+section {
+	padding-top: 2rem;
+	}
+#visible-for-small-only {
+	display:block;
+	}
+
+#visible-for-medium-up {
+	display:none;
+	}	
 }
