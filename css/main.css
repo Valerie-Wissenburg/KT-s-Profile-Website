@@ -89,7 +89,9 @@ nav ul{
 	padding: 0;		
 }
 ---------------- */
-
+ul {
+	margin-left: 4rem;
+	}
 nav ul, nav li {
 	flex: 1;
 }
@@ -560,10 +562,6 @@ nav.alt-color {
 	background-color: #F3F2F2;
 	z-index: 3;
 	height: 7.7rem;
-}
-.logo {
-	position: relative;
-	left: 4rem;
 }
 }
 
