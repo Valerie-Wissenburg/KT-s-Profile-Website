@@ -2,6 +2,7 @@
 /* CSS Document */
 
 
+
 #wrapper {
 	width: 100%;
 }
@@ -77,18 +78,9 @@ a {
 .sticky {
 	width: 100%;
 }
-/***************** NAVIGATION ********************/
-
-/*--------------------
-nav ul{
-	display: flex; 
-	flex-wrap: wrap; 
-	max-width: 1080px; 
-	margin: 0 auto;
-	list-style: none;
-	padding: 0;		
-}
----------------- */
+.logo {
+	width: 18%;
+	}
 ul {
 	margin-left: 4rem;
 	}
@@ -131,73 +123,97 @@ a:hover {
 .sticky {
 	width: 100%;
 }
-/* ------------
+.main {
+	background: none;
+}
+/*NEW NAV*/
+nav ul{
+	display: flex; 
+	flex-wrap: wrap; 
+	max-width: 1080px; 
+	margin: 0 auto;		
+   background: #999;
+}
+nav ul,
+nav li{
+	flex: 1;	
+}
+nav li:last-child{border-bottom: none;}
+nav a{
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	font-size: 1rem;
+}
+nav a:hover{
+	background: none;
+	color: #407196;
+}
 nav li{
 	position: relative;
 	line-height: 50px;
-	color: #fff;
+	color: #4c4c4d;
 	text-align: center;
 }  
----------- */
-
-nav input, nav label {
-	display: flex;
-	width: 35px;
-	height: 35px;
-	background-image: url(../imgs/hamburger.svg);
-	background-repeat: no-repeat;
-	color: #fff;
-	text-align: center;
+nav input,
+nav label{
+	display: none;
+	width: 36px; 
+	height: 36px; 
+	background: #555; 
+	color: #fff; 
+	text-align: center; 
 	line-height: 36px;
 	font-size: 1.6rem;
 	border-radius: 4px;
-}
-nav label {
-	position: absolute;
-	top: 8px;
-	right: 8px;
+} 
+nav label{
+	background:url(../imgs/hamburger.svg);
+	background-repeat: none;
+	position: absolute; 
+	top: 8px; 
+	right: 8px; 
 	transition: .4s;
-}
-nav label:hover {
-	cursor: pointer;
-}
-
-/* ------
+	
+	}
+nav label:hover{cursor:pointer;}
 nav label:before{
 	font-family: FontAwesome;
 	font-size: 24px;
-	content: "\f0c9";
 	text-align: center;
 }
-------- */
 
 
-/*************** MEDIA QUERIES *******************/
-@media only screen and (max-width: 1080px) {
-nav ul {
-	display:none;
-	box-shadow: 0 0 5px rgba(0,0,0, .7);
+
+
+@media only screen and (max-width: 1080px){
+	nav ul{
+		transform: translateY(0);
+		box-shadow: 0 0 5px rgba(0,0,0, .7);
+      transition: all .5s;
+	}
+	nav li{
+		flex: none; 
+		width: 100%;
+		border-bottom: solid 1px #777;
+	} 
+	nav input[type="checkbox"]:checked + ul{
+		transform: translateY(-100%);
+		width: 100%;
+		background: #999;   
+      transition: all .5s;
+	}
+	nav label{display: block;}  
+	nav input[type="checkbox"]:checked + ul li:nth-child(1){
+		background: #777; 
+		color: #fff;
+	}  
+	.main {
+	background: #EFEFEF;
 }
-nav li {
-	flex: none;
-	width: 100%;
 }
-nav input[type="checkbox"]:checked + ul {
-	display: block;
-	width: 100%;
-	background: #efefef;
-}
-nav label {
-	display: block;
-}
-nav input[type="checkbox"]:checked + ul li:nth-child(1) {
-	background: #777;
-	color: #fff;
-}
-.main {
-	background: #efefef;
-}
-}
+
+
 /*---------------------
 	FOOTER
 ----------------------*/
