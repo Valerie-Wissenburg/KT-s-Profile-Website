@@ -43,16 +43,18 @@ nav {
 }
 li {
 	display: inline-block;
-	padding: 2rem 3.5rem;
+	padding: 2rem 1rem;
 }
 .sliding-hover {
 	text-decoration: none;
 	border-bottom: 3px solid transparent;
+	height: 2px;
 	width: 0px;
 	transition: 0.5s ease;
 	display: inline-block;
 	margin-left: 20px;
 }
+
 .sliding-hover:hover {
 	border-bottom: 3px solid #407196;
 	width: 150px;
@@ -63,7 +65,7 @@ li {
 }
 #KT-top-bar {
 	font-size: 2rem;
-	padding: 0 3rem;
+	padding: 1rem 3rem;
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background-color: none;
@@ -100,10 +102,6 @@ nav a:hover {
 }
 nav {
 	width: 100%;
-}
-li {
-	display: inline-block;
-	padding: 10px 45px;
 }
 .top-bar {
 	background-color: none;
