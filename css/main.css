@@ -226,18 +226,25 @@ footer {
 .footer-font-color {
 	font-color: #4c4c4d;
 }
+
+#footer-margin {
+	margin:0;
+}
+
 /*-----------------
 	INSTAGRAM FEED
 -------------------*/
 #insta-feed {
 	padding: 2.5rem 0 9.5rem 0;
 }
+
 /*-- ==============
 	VIDEO SECTION
 ============== --*/	
 #video-p-margin {
 	margin-top: 1rem;
 }
+
 /*-- =========================
 	MERCH COLLAGE 
 ========================== --*/
@@ -687,5 +694,6 @@ section {
 #merch {
 	margin-top:-1rem;
 }
+
 
 }
