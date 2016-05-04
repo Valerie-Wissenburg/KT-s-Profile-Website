@@ -752,4 +752,33 @@ section {
 #merch {
 	margin-top: -1rem;
 }
+#media {
+	margin-top:5rem;
+}
+
+.sm-a-links {
+	font-size:.7rem;
+	margin:.2rem;
+}
+
+.sm-margin-tp {
+	margin-top:2rem;
+}
+
+blockquote {
+	font-size:.7rem;
+	margin-left:1rem;
+	margin-top:.8rem;
+	color:#407196;
+}
+
+/* ==============
+li.connect-links {
+	padding: 0;
+	float:none !important;
+	display:inline;
+	margin:0 !important;
+}
+=========== */
+
 }
