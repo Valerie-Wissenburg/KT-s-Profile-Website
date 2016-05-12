@@ -181,7 +181,7 @@ nav label:before {
 	text-align: center;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 40em) {
 nav ul {
 	transform: translateY(0);
 	box-shadow: 0 0 5px rgba(0,0,0, .7);
@@ -772,13 +772,13 @@ blockquote {
 	color:#407196;
 }
 
-/* ==============
+
 li.connect-links {
 	padding: 0;
 	float:none !important;
 	display:inline;
 	margin:0 !important;
 }
-=========== */
+
 
 }
