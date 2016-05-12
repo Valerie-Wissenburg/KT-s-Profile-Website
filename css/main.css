@@ -774,10 +774,7 @@ blockquote {
 
 
 li.connect-links {
-	padding: 0;
-	float:none !important;
-	display:inline;
-	margin:0 !important;
+	display:none;
 }
 
 
