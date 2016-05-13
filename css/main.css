@@ -499,6 +499,7 @@ blockquote{
 .connect-icon {
 	width: 40px;
 }
+
 	
 /*-------------------------
 	SLIDESHOW ON BIO PAGE
@@ -817,5 +818,11 @@ blockquote {
 }
 a {
 	margin:0;
+	}
+#logo-position {
+	position:absolute;
+	top:1rem;
+	left: 2rem;
+	width: 20%;
 	}
 }
