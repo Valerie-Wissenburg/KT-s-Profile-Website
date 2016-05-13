@@ -499,6 +499,9 @@ blockquote{
 .connect-icon {
 	width: 40px;
 }
+.small-only {
+	display: none;
+	}
 
 	
 /*-------------------------
@@ -586,9 +589,15 @@ nav.alt-color {
 	z-index: 3;
 	height: 7.7rem;
 }
+.small-only {
+	display: none;
+	}
 }
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+	.small-only {
+	display: none;
+	}
 }
 
 /* Medium screens */
@@ -693,7 +702,9 @@ ul.main {
 .med-p-mar-bio {
 	margin: 0 1.3rem;
 }
-
+.small-only {
+	display: none;
+	}
 }
 
 /* Small Screens --- max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -824,5 +835,8 @@ a {
 	top:1rem;
 	left: 2rem;
 	width: 20%;
+	}
+.small-only {
+	display: block;
 	}
 }
