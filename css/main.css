@@ -51,7 +51,7 @@ li {
 	height: 2px;
 	width: 0px;
 	transition: 0.5s ease;
-	display: inline-block;
+	display: block;
 	margin-left: 20px;
 }
 .sliding-hover:hover {
@@ -80,7 +80,7 @@ a {
 	width: 100%;
 }
 .logo {
-	width: 18%;
+	display:none;
 }
 ul {
 	margin-left: 4rem;
@@ -122,6 +122,7 @@ a:hover {
 }
 .main {
 	background: none;
+	display: block;
 }
 /*NEW NAV*/
 nav ul {
@@ -181,7 +182,7 @@ nav label:before {
 	text-align: center;
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 60em) {
 nav ul {
 	transform: translateY(0);
 	box-shadow: 0 0 5px rgba(0,0,0, .7);
@@ -207,6 +208,10 @@ nav input[type="checkbox"]:checked + ul li:nth-child(1) {
 }
 .main {
 	background: #EFEFEF;
+}
+.sliding-hover {
+	display: block;
+
 }
 }
 /*---------------------
@@ -592,12 +597,20 @@ nav.alt-color {
 .small-only {
 	display: none;
 	}
+.main {
+	display: flex;
+	}
 }
-
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
 	.small-only {
 	display: none;
 	}
+	.logo {
+	display: block;
+	width: 18%;
+}
+
+	
 }
 
 /* Medium screens */
@@ -705,6 +718,7 @@ ul.main {
 .small-only {
 	display: none;
 	}
+
 }
 
 /* Small Screens --- max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -839,4 +853,10 @@ a {
 .small-only {
 	display: block;
 	}
+.sliding-hover:hover {
+	border-bottom: 3px solid #407196;
+	width: none;
+	margin-left: none;
+}
+
 }
