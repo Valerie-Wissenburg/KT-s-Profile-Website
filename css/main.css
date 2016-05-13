@@ -777,5 +777,8 @@ li.connect-links {
 	display:none;
 }
 
+.hidden-small-screen {
+	display: none;
+}
 
 }
