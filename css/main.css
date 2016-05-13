@@ -643,17 +643,18 @@ nav.alt-color {
 }
 .events-title {
 	padding: 1.3rem 0 0 1.3rem;
+	margin-top:5rem;
 }
 .events-padding {
 	padding: 0 0 0 1.3rem;
 }
 
 #merch {
-	margin-top: -10rem;
+	margin-top:-1rem;
 }
 
 #bio-margin {
-	margin-top: 25rem;
+	margin-top: 32rem;
 }
 
 ul.main {
@@ -667,6 +668,10 @@ ul.main {
 
 #med-bio-margin {
 	margin-left: 1.3rem;
+}
+
+.hidden-sm-med-screen {
+	display: none;
 }
 
 }
@@ -777,7 +782,7 @@ li.connect-links {
 	display:none;
 }
 
-.hidden-small-screen {
+.hidden-sm-med-screen {
 	display: none;
 }
 
