@@ -614,7 +614,7 @@ nav.alt-color {
 }
 
 /* Medium screens */
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 59em) {
 
 .sliding-hover {
 	width: 100%;
@@ -716,8 +716,13 @@ ul.main {
 	margin: 0 1.3rem;
 }
 .small-only {
-	display: none;
+	display: block;
+	width: 15%;
+	position:absolute;
+	top: 1rem;
+	left: 3rem;
 	}
+
 
 }
 
@@ -852,6 +857,8 @@ a {
 	}
 .small-only {
 	display: block;
+	top: 1rem;
+	left: 2rem;
 	}
 .sliding-hover:hover {
 	border-bottom: 3px solid #407196;
