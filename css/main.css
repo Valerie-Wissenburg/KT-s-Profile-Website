@@ -692,6 +692,11 @@ ul.main {
 p, h1, h2, h3, h4, blockquote, li, a, nav, label {
 	margin: 0 2rem;
 }
+
+.top-bar {
+	height:80px;
+}
+
 header {
 	margin-top: 2rem;
 	margin-bottom: .5rem;
@@ -786,7 +791,6 @@ blockquote {
 	margin-left:1rem;
 	margin-top:.8rem;
 }
-
 
 .hidden-sm-med-screen {
 	display: none;
