@@ -496,7 +496,9 @@ a:hover.bio-button {
 blockquote{
 	color:#407196;
 }
-	
+.connect-icon {
+	width: 40px;
+}
 	
 /*-------------------------
 	SLIDESHOW ON BIO PAGE
@@ -801,5 +803,19 @@ blockquote {
 .hidden-sm-med-screen {
 	display: none;
 }
-
+.right {
+	float: none;
+	margin-right: .5rem;
+	margin-top: 12rem;
+}
+.connect-links {
+	padding: 0rem;
+	margin:0rem;
+}
+.connect-icon {
+	width: 30px;
+}
+a {
+	margin:0;
+	}
 }
