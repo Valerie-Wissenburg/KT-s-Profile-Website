@@ -492,6 +492,12 @@ a:hover.bio-button {
 #visible-for-medium-up {
 	display: block;
 }
+
+blockquote{
+	color:#407196;
+}
+	
+	
 /*-------------------------
 	SLIDESHOW ON BIO PAGE
 --------------------------*/
@@ -779,7 +785,6 @@ blockquote {
 	font-size:.7rem;
 	margin-left:1rem;
 	margin-top:.8rem;
-	color:#407196;
 }
 
 
