@@ -114,9 +114,7 @@ a {
 a:hover {
 	color: #407196;
 }
-.fixed {
-	position: fixed;
-}
+
 .sticky {
 	width: 100%;
 }
@@ -124,9 +122,11 @@ a:hover {
 	background: none;
 	display: block;
 }
-/*NEW NAV*/
+
+
+/*NEW NAV */
 nav ul {
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	max-width: 1080px;
 	margin: 0 auto;
@@ -182,8 +182,9 @@ nav label:before {
 	text-align: center;
 }
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 69em) {
 nav ul {
+	display: none;
 	transform: translateY(0);
 	box-shadow: 0 0 5px rgba(0,0,0, .7);
 	transition: all .5s;
@@ -198,6 +199,7 @@ nav input[type="checkbox"]:checked + ul {
 	width: 100%;
 	background: #999;
 	transition: all .5s;
+	display: block;
 }
 nav label {
 	display: block;
@@ -213,6 +215,13 @@ nav input[type="checkbox"]:checked + ul li:nth-child(1) {
 	display: block;
 
 }
+.small-only {
+	display: block;
+	width: 15%;
+	position:absolute;
+	top: 1rem;
+	left: 3rem;
+	}
 }
 /*---------------------
 	FOOTER
@@ -614,7 +623,7 @@ nav.alt-color {
 }
 
 /* Medium screens */
-@media only screen and (max-width: 59em) {
+@media only screen and (max-width: 69em) {
 
 .sliding-hover {
 	width: 100%;
