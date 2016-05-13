@@ -584,6 +584,7 @@ nav.alt-color {
 
 /* Medium screens */
 @media only screen and (max-width: 48em) {
+
 .sliding-hover {
 	width: 100%;
 }
@@ -672,6 +673,10 @@ ul.main {
 
 .hidden-sm-med-screen {
 	display: none;
+}
+
+.med-p-mar-bio {
+	margin: 0 1.3rem;
 }
 
 }
