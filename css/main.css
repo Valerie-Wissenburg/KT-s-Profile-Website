@@ -594,6 +594,12 @@ nav.alt-color {
 .sliding-hover {
 	width: 100%;
 }
+
+.top-bar {
+	height:100px;
+}
+
+
  a:li {
  color: white;
 }
@@ -694,7 +700,7 @@ p, h1, h2, h3, h4, blockquote, li, a, nav, label {
 }
 
 .top-bar {
-	height:80px;
+	height:100px;
 }
 
 header {
