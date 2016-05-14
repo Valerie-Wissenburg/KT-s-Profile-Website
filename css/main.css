@@ -808,6 +808,7 @@ section {
 }
 .events-title {
 	padding: 2rem 0 0 0;
+	margin-top:-1rem;
 }
 .events-padding {
 	padding: .5rem;
