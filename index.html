@@ -19,22 +19,32 @@
  	NAV
 =============== --> 
 
-<header>
-  <div class="contain-to-grid fixed">
-    <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: small, medium, large">
-      <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
-      <ul class="main">
-        <li class="sliding-hover"><a href="bio-page.html#music" class="smoothScroll">Music</a> </li>
-        <li class="sliding-hover"><a href="#media" class="smoothScroll">Media</a> </li>
-        <li class="sliding-hover"><a href="#events" class="smoothScroll">Events</a> </li>
-        <a id="KT-top-bar" href="#home" class="smoothScroll logo"><img src="imgs/logo.svg" alt="Logo"></a>
+<header class="header">
+<nav>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+  <div class="row columns large-centered small-12">
+  	<div class="column large-5 medium-6 small-no-column">
+    	<div>
+    		<li class="sliding-hover"><a href="bio-page.html#music" class="smoothScroll">Music</a> </li>
+        	<li class="sliding-hover"><a href="#media" class="smoothScroll">Media</a> </li>
+        	<li class="sliding-hover"><a href="#events" class="smoothScroll">Events</a> </li>
+        </div>
+     </div>
+     
+     <div class=" medium-0 column large-2 hidden">   
+        <a href="#home" class="smoothScroll logo"><img src="imgs/logo.svg" alt="Logo"></a>
+     </div>  
+     
+     <div class="column large-5 medium-6 small-no-column">
         <li class="sliding-hover"><a href="#merch" class="smoothScroll">Merch</a> </li>
         <li class="sliding-hover"><a href="bio-page.html#bio" class="smoothScroll">Bio</a> </li>
         <li id="med-padding" class="sliding-hover"><a href="bio-page.html#connect" class="smoothScroll">Connect</a> </li>
-      </ul>
-      <label for="css-toggle-menu"></label>
-    </nav>
-  </div>
+    </div>
+   </div>
+  </ul>
+ </nav>
 </header>
 
 <!-- ============= 

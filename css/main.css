@@ -32,6 +32,153 @@ html, body {
 /*----------
 	NAV
 ------------*/
+header {
+  background-color: none;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+ 
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+ 
+.header li a {
+  display: block;
+  text-decoration: none;
+}
+ 
+
+ 
+.header .logo {
+  display: block;
+  font-size: 2em;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 70%;
+}
+ 
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/*----------------------
+	MENU ICON STYLING
+------------------------*/
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+ 
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+ 
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+ 
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+ 
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+/*----------------------
+	ANIMATIONS
+------------------------*/
+.header .menu-btn {
+  display: none;
+}
+ 
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+ 
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/*----------------------
+	RESONSIVE NAV
+------------------------*/
+@media (min-width: 52em) {
+  .header li {
+    float: left;
+	padding: 2rem;
+  }
+
+  .header .menu {
+    clear: none;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  
+}
+/*----------------------
+	SLIDING HOVER
+------------------------*/
+
+
+.sliding-hover:after {
+	 display: inline;
+    zoom: 1;
+	
+	
+}
+.sliding-hover:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.sliding-hover:hover:after {
+    width: 100%;
+    background: #236fe8;
+	border-bottom: 3px;
+	border-bottom: 3px solid #407196;
+}
 nav {
 	background-color: transparent;
 	color: black;
@@ -41,23 +188,7 @@ nav {
 	width: 100%;
 	z-index: 3;
 }
-li {
-	display: inline-block;
-	padding: 2rem 1rem;
-}
-.sliding-hover {
-	text-decoration: none;
-	border-bottom: 3px solid transparent;
-	height: 2px;
-	width: 0px;
-	transition: 0.5s ease;
-	display: block;
-	margin-left: 20px;
-}
-.sliding-hover:hover {
-	border-bottom: 3px solid #407196;
-	margin-left: 40px;
-}
+/*---
 .top-bar {
 	background-color: none;
 }
@@ -121,107 +252,11 @@ a:hover {
 	background: none;
 	display: block;
 }
+*/
 
 
-/*NEW NAV */
-nav ul {
-	display: none;
-	flex-wrap: wrap;
-	max-width: 1080px;
-	margin: 0 auto;
-	background: #999;
-}
-nav ul, nav li {
-	flex: 1;
-}
-nav li:last-child {
-	border-bottom: none;
-}
-nav a {
-	text-decoration: none;
-	color: inherit;
-	display: block;
-	font-size: 1rem;
-}
-nav a:hover {
-	background: none;
-	color: #407196;
-}
-nav li {
-	position: relative;
-	line-height: 50px;
-	color: #4c4c4d;
-	text-align: center;
-}
-nav input, nav label {
-	display: none;
-	width: 36px;
-	height: 36px;
-	background: #555;
-	color: #fff;
-	text-align: center;
-	line-height: 36px;
-	font-size: 1.6rem;
-	border-radius: 4px;
-}
-nav label {
-	background: url(../imgs/hamburger.svg);
-	background-repeat: none;
-	position: absolute;
-	top: 8px;
-	right: 8px;
-	transition: .4s;
-}
-nav label:hover {
-	cursor: pointer;
-}
-nav label:before {
-	font-family: FontAwesome;
-	font-size: 24px;
-	text-align: center;
-}
 
-@media only screen and (max-width: 69em) {
-nav ul {
-	display: none;
-	transform: translateY(0);
-	box-shadow: 0 0 5px rgba(0,0,0, .7);
-	transition: all .5s;
-}
-nav li {
-	flex: none;
-	width: 100%;
-	border-bottom: solid 1px #777;
-}
-nav input[type="checkbox"]:checked + ul {
-	transform: translateY(-100%);
-	width: 100%;
-	background: #999;
-	transition: all .5s;
-	display: block;
-}
-nav label {
-	display: block;
-}
-nav input[type="checkbox"]:checked + ul li:nth-child(1) {
-	background: #777;
-	color: #fff;
-}
-.main {
-	background: #EFEFEF;
-}
-.sliding-hover {
-	display: block;
 
-}
-.small-only {
-	display: block;
-	width: 15%;
-	position:absolute;
-	top: 1rem;
-	left: 3rem;
-	}
-}
 /*---------------------
 	FOOTER
 ----------------------*/
@@ -624,15 +659,6 @@ nav.alt-color {
 /* Medium screens */
 @media only screen and (max-width: 69em) {
 
-.sliding-hover {
-	width: 100%;
-}
-
-.top-bar {
-	height:100px;
-}
-
-
  a:li {
  color: white;
 }
@@ -740,14 +766,6 @@ p, h1, h2, h3, h4, blockquote, li, a, nav, label {
 	margin: 0 2rem;
 }
 
-.top-bar {
-	height:30px;
-}
-
-header {
-	margin-top: 2rem;
-	margin-bottom: .5rem;
-}
 .social-media-links {
 	margin: .5rem .2rem;
 	padding: 0;
@@ -869,10 +887,77 @@ a {
 	top: 1rem;
 	left: 2rem;
 	}
-.sliding-hover:hover {
-	border-bottom: 3px solid #407196;
-	width: none;
-	margin-left: none;
-}
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/*----- NEW MEDIA QUERIES FOR NAV -------*/
+
+@media only screen and (max-width: 30em) {
+	.logo{
+		display: none;
+		}
+	.small-no-column {
+		padding:0px;
+		}
+	.menu {
+		float:right;
+		}
+	}
+@media only screen and (max-width: 69em) {
+	.header .logo {
+  display: none;
+  font-size: 2em;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 10%;
+}
+.medium-0 {
+	  width: 0%;
+	  }
+.menu {
+		float:right;
+		}
+nav.alt-color {
+	background-color: none;
+	z-index: 3;
+	height: none;
+}
+	}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+	.logo{
+		display: none;
+		}
+	.menu {
+		float:none;
+		}
+
+	}
+	}
+@media only screen and (min-width: 64.063em) {
+	.logo{
+		display: none;
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+

@@ -27,6 +27,16 @@ a:hover {
 	NAV
 ------------------------*/
 
+nav {
+	background-color: transparent;
+	color: black;
+	transition: all 0.25s ease;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+}
+
 header {
   background-color: none;
   position: fixed;
@@ -203,7 +213,11 @@ header {
 .menu {
 		float:right;
 		}
-
+nav.alt-color {
+	background-color: none;
+	z-index: 3;
+	height: none;
+}
 	}
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
 	.logo{
