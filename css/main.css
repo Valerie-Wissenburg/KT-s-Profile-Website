@@ -152,7 +152,7 @@ header {
   .header .menu-icon {
     display: none;
   }
-  
+
 }
 /*----------------------
 	SLIDING HOVER
@@ -957,8 +957,10 @@ nav.alt-color {
 	top:1rem;
 	left: .2rem;
 	width: 15%;
+
 	}
-	}
+
+}
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
 	.logo{
 		display: none;
@@ -976,7 +978,21 @@ nav.alt-color {
 		
 	}
 
-
+@media only screen and (min-width: 30em) and (max-width: 69em) {
+	
+	.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+  background-color:#EFEFEF;
+  width:50%;
+  margin: 2rem 0rem;
+  float:right;
+}
+	nav.alt-color {
+	background-color: white;
+	z-index: 3;
+	height: 6rem;
+}
+	}
 
 
 
