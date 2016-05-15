@@ -133,7 +133,7 @@ header {
 /*----------------------
 	RESONSIVE NAV
 ------------------------*/
-@media (min-width: 48em) {
+@media (min-width: 52em) {
   .header li {
     float: left;
 	padding: 2rem;
@@ -182,7 +182,12 @@ header {
 	.logo{
 		display: none;
 		}
-	
+	.small-no-column {
+		padding:0px;
+		}
+	.menu {
+		float:right;
+		}
 	}
 @media only screen and (max-width: 69em) {
 	.header .logo {
@@ -195,13 +200,20 @@ header {
 .medium-0 {
 	  width: 0%;
 	  }
-	
+.menu {
+		float:right;
+		}
+
 	}
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
 	.logo{
 		display: none;
 		}
-	
+	.menu {
+		float:none;
+		}
+
+	}
 	}
 @media only screen and (min-width: 64.063em) {
 	.logo{
