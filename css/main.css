@@ -990,8 +990,21 @@ nav.alt-color {
 	nav.alt-color {
 	background-color: white;
 	z-index: 3;
-	height: 6rem;
+	height: 8rem;
 }
+#logo-position {
+	display:block;
+	position:absolute;
+	top:1rem;
+	left: .2rem;
+	width: 10%;
+
+	}
+nav {
+	height:8rem;
+	background-color:white;
+	
+	}
 	}
 
 
