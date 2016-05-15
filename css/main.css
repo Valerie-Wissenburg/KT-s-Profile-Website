@@ -34,7 +34,6 @@ html, body {
 ------------*/
 header {
   background-color: none;
-  position: fixed;
   width: 100%;
   z-index: 3;
 }
@@ -899,10 +898,18 @@ a {
 	left: 2rem;
 	}
 
+<<<<<<< HEAD
 .sm-top-margin {
 	margin-top:-5rem;
 }
 
+=======
+nav.alt-color {
+	background-color: white;
+	z-index: 3;
+	height: 5rem;
+}
+>>>>>>> origin/master
 }
 
 
