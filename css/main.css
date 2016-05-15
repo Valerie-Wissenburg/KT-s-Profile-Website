@@ -898,7 +898,11 @@ a {
 	left: 2rem;
 	}
 
-
+nav.alt-color {
+	background-color: white;
+	z-index: 3;
+	height: 5rem;
+}
 }
 
 
