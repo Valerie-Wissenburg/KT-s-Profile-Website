@@ -138,7 +138,7 @@ header {
 /*----------------------
 	RESONSIVE NAV
 ------------------------*/
-@media (min-width: 52em) {
+@media (min-width: 69em) {
   .header li {
     float: left;
 	padding: 2rem;
@@ -188,6 +188,9 @@ nav {
 	width: 100%;
 	z-index: 3;
 }
+#logo-position {
+	display:none;
+	}
 /*---
 .top-bar {
 	background-color: none;
@@ -643,6 +646,7 @@ nav.alt-color {
 .main {
 	display: flex;
 	}
+
 }
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
 	.small-only {
@@ -756,7 +760,6 @@ ul.main {
 	top: 1rem;
 	left: 3rem;
 	}
-
 
 }
 
@@ -877,10 +880,11 @@ a {
 	margin:0;
 	}
 #logo-position {
+	display:block;
 	position:absolute;
 	top:1rem;
-	left: 2rem;
-	width: 20%;
+	left: .2rem;
+	width: 15%;
 	}
 .small-only {
 	display: block;
@@ -933,6 +937,13 @@ nav.alt-color {
 	z-index: 3;
 	height: none;
 }
+#logo-position {
+	display:block;
+	position:absolute;
+	top:1rem;
+	left: .2rem;
+	width: 15%;
+	}
 	}
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
 	.logo{
