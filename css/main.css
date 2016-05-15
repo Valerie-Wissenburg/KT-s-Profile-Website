@@ -535,6 +535,8 @@ a:hover.bio-button {
 }
 .connect-links {
 	padding: 0 .5rem;
+	list-style:none;
+	display:inline;
 }
 #visible-for-small-only {
 	display: none;
@@ -900,10 +902,6 @@ a {
 
 
 
-
-
-
-
 /*----- NEW MEDIA QUERIES FOR NAV -------*/
 
 @media only screen and (max-width: 30em) {
@@ -953,7 +951,7 @@ nav.alt-color {
 		}
 
 	}
-	}
+	
 @media only screen and (min-width: 64.063em) {
 	.logo{
 		display: none;
