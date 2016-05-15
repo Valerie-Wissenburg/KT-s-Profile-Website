@@ -876,9 +876,10 @@ blockquote {
 	margin-top: 12rem;
 }
 .connect-links {
-	padding: 0rem;
+	padding:.2rem;
 	margin:0rem;
 }
+
 .connect-icon {
 	width: 30px;
 }
@@ -898,6 +899,9 @@ a {
 	left: 2rem;
 	}
 
+.sm-top-margin {
+	margin-top:-5rem;
+}
 
 }
 
