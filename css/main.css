@@ -504,12 +504,17 @@ a:hover.bio-button {
 	color: #efefef;
 	border: .125rem solid #efefef;
 }
-/*----------------
-	VIDEO PAGE
-------------------*/
-.video-title {
-	margin: 18rem 3.8rem;
-}
+
+/*--------------------
+	FOOTER
+----------------------*/
+.social-media-links {
+	display: inline-block;
+	}
+
+
+
+
 /*----------------
 	BIO PAGE
 ------------------*/
