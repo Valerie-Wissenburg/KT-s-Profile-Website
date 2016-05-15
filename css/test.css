@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*----------------------
+	TYPOGRAPHY
+------------------------*/
+
+h1, li {
+  font-family: "neuzeit-grotesk",sans-serif;
+  font-weight: bolder;
+  color: #4c4c4d;
+  }
+
+body {
+	font-family: 'Muli', sans-serif;
+	color: #4c4c4d;
+	text-transform:uppercase;
+	}
+a {
+	color: #4c4c4d;
+	}
+a:hover {
+	color: #407196;
+	}
+/*----------------------
+	NAV
+------------------------*/
+
+header {
+  background-color: none;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+ 
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+ 
+.header li a {
+  display: block;
+  text-decoration: none;
+}
+ 
+
+ 
+.header .logo {
+  display: block;
+  font-size: 2em;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 70%;
+}
+ 
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/*----------------------
+	MENU ICON STYLING
+------------------------*/
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+ 
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+ 
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+ 
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+ 
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+/*----------------------
+	ANIMATIONS
+------------------------*/
+.header .menu-btn {
+  display: none;
+}
+ 
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+ 
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/*----------------------
+	RESONSIVE NAV
+------------------------*/
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+	padding: 2rem;
+  }
+
+  .header .menu {
+    clear: none;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  
+}
+/*----------------------
+	SLIDING HOVER
+------------------------*/
+.sliding-hover {
+	
+	}
+
+
+.sliding-hover:after {
+	 display: inline;
+    zoom: 1;
+	
+	
+}
+.sliding-hover:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.sliding-hover:hover:after {
+    width: 100%;
+    background: #236fe8;
+	border-bottom: 3px;
+	border-bottom: 3px solid #407196;
+}
+
+@media only screen and (max-width: 30em) {
+	.logo{
+		display: none;
+		}
+	
+	}
+@media only screen and (max-width: 69em) {
+	.header .logo {
+  display: none;
+  font-size: 2em;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 10%;
+}
+.medium-0 {
+	  width: 0%;
+	  }
+	
+	}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+	.logo{
+		display: none;
+		}
+	
+	}
+@media only screen and (min-width: 64.063em) {
+	.logo{
+		display: none;
+		}
+		
+	}

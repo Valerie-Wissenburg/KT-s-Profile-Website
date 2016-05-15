@@ -56,7 +56,6 @@ li {
 }
 .sliding-hover:hover {
 	border-bottom: 3px solid #407196;
-	width: 150px;
 	margin-left: 40px;
 }
 .top-bar {
@@ -616,7 +615,7 @@ nav.alt-color {
 	}
 	.logo {
 	display: block;
-	width: 18%;
+	width: 40%;
 }
 
 	
