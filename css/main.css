@@ -959,8 +959,13 @@ nav.alt-color {
 	width: 15%;
 
 	}
+<<<<<<< Updated upstream
 
 }
+=======
+	
+	}
+>>>>>>> Stashed changes
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
 	.logo{
 		display: none;
