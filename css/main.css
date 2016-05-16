@@ -941,10 +941,10 @@ nav.alt-color {
   width: 10%;
 }
 .medium-0 {
-	  width: 0%;
+	 width: 0%;
 	  }
 .menu {
-		float:right;
+	float:right; 
 		}
 nav.alt-color {
 	background-color: none;
@@ -978,6 +978,12 @@ nav.alt-color {
 		display: none;
 		}
 		
+	.medium-clear {
+		clear:both;
+		margin-right:-25rem;
+		padding: .3rem 0;
+		}	
+		
 	}
 
 @media only screen and (min-width: 30em) and (max-width: 69em) {
@@ -988,6 +994,7 @@ nav.alt-color {
   width:50%;
   margin: 2rem 0rem;
   float:right;
+  
 }
 	nav.alt-color {
 	background-color: white;
@@ -1007,6 +1014,14 @@ nav {
 	background-color:white;
 	
 	}
+	
+.medium-clear {
+	clear:both;
+	margin-right:12.6rem;
+	padding: .3rem 0;
+}
+	
+	
 	}
 
 
