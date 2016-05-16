@@ -978,11 +978,6 @@ nav.alt-color {
 		display: none;
 		}
 		
-	.medium-clear {
-		clear:both;
-		margin-right:-25rem;
-		padding: .3rem 0;
-		}	
 		
 	}
 
@@ -1019,6 +1014,7 @@ nav {
 	clear:both;
 	margin-right:12.6rem;
 	padding: .3rem 0;
+	float: none !important;
 }
 	
 	
