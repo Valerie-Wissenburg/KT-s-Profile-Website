@@ -14,17 +14,26 @@ section {
 	padding-top: 10rem;
 }
 h1, h2, h3, h4, p, blockquote, li, a, nav, label {
-	font-family: 'Muli', sans-serif;
+	font-family: "neuzeit-grotesk",sans-serif;
 	color: #4c4c4d;
 }
 h1, h2, blockquote, li {
 	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight:bold;
 	color: #4c4c4d;
 }
+h2 {
+	font-size: 2.5rem;
+	}
 h5 {
 	color: #fff;
 	size: .4rem;
 }
+p {
+	font-family: "neuzeit-grotesk",sans-serif;
+	font-weight:lighter;
+	}
 html, body {
 	max-width: 100%;
 	overflow-x: hidden;
@@ -176,7 +185,7 @@ header {
 
 .sliding-hover:hover:after {
     width: 100%;
-    background: #236fe8;
+    background: #407196;
 	border-bottom: 3px;
 	border-bottom: 3px solid #407196;
 }
@@ -192,72 +201,9 @@ nav {
 #logo-position {
 	display:none;
 	}
-/*---
-.top-bar {
-	background-color: none;
-}
-#KT-top-bar {
-	font-size: 2rem;
-	padding: 1rem 3rem;
-}
-.top-bar-section li:not(.has-form) a:not(.button) {
-	background-color: none;
-}
-a {
-	color: #2B2B2B;
-}
-.fixed {
-	position: fixed;
-	z-index: 2;
-}
-.sticky {
-	width: 100%;
-}
-.logo {
-	display:none;
-}
-ul {
-	margin-left: 4rem;
-}
-nav ul, nav li {
-	flex: 1;
-}
-nav li:last-child {
-	border-bottom: none;
-}
-nav a {
-	text-decoration: none;
-	color: inherit;
-	font-size: 1rem;
-}
-nav a:hover {
-	color: #407196;
-}
-nav {
-	width: 100%;
-}
-.top-bar {
-	background-color: none;
-}
-.top-bar-section li:not(.has-form) a:not(.button) {
-	background-color: none;
-}
-a {
-	color: #407196;
-}
 a:hover {
 	color: #407196;
 }
-
-.sticky {
-	width: 100%;
-}
-.main {
-	background: none;
-	display: block;
-}
-*/
-
 
 
 
