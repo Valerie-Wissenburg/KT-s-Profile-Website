@@ -978,7 +978,11 @@ nav.alt-color {
 	.logo{
 		display: none;
 		}
+<<<<<<< HEAD
 			
+=======
+		
+>>>>>>> origin/master
 		
 	}
 
@@ -1015,6 +1019,7 @@ nav {
 	clear:both;
 	margin-right:12.6rem;
 	padding: .3rem 0;
+	float: none !important;
 }
 	
 	
