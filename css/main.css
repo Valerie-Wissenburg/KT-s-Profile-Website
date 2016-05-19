@@ -877,7 +877,9 @@ nav.alt-color {
 	.menu {
 		float:right;
 		}	
-		
+	nav {
+		margin: 0;
+		}	
 	}
 @media only screen and (max-width: 69em) {
 	.header .logo {
