@@ -353,6 +353,8 @@ a:hover.button {
 .event {
 	padding: 1rem 1rem 1rem 0;
 	display: table;
+	text-transform: uppercase;
+	font-family: "neuzeit-grotesk",sans-serif;
 }
 .event-date {
 	width: 6rem;
@@ -372,6 +374,7 @@ a:hover.button {
 	padding: 0 2rem;
 	text-align: center;
 	font-size: 2rem;
+	font-weight:bolder;
 }
 .event-desc {
 	height: 85px;
