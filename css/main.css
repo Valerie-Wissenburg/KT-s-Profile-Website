@@ -148,7 +148,7 @@ header {
 /*----------------------
 	RESONSIVE NAV
 ------------------------*/
-@media (min-width: 69em) {
+@media (min-width: 70em) {
   .header li {
     float: left;
 	padding: 2rem;
@@ -966,7 +966,12 @@ nav {
 	
 	}
 
+@media only screen and (min-width: 69em) and (max-width: 73em) {
+	li {
+	font-size: 1.3rem;
 
+}
+}
 
 
 
